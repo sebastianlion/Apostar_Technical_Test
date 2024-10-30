@@ -11,21 +11,20 @@ Esta aplicación genera y envía una imagen con los resultados diarios de las lo
 
 ### 1. Clona el repositorio
    ```bash
-   git clone https://github.com/sebastianlion/Apostar_Tecnhical_Test.git
 
-    2. Ir a ./backend allí configurar el archivo .env
+   1. git clone https://github.com/sebastianlion/Apostar_Tecnhical_Test.git
+
+   2. Ir a ./backend allí configurar el archivo .env
 Duplica el archivo .env.example y completa los valores necesarios (como credenciales de correo y API de loterías).
 
-    3. Ejecutar el comando npm install para instalar todos los paquetes y dependencias
-    4. Instalar dependencias necesarias para canva.
-    5. Ejecutar el comando npm run watch asegurarse ejecutar primero backend PORT=3000 y despues frontend este ultimo en el puerto 3001
+   3. Ejecutar el comando npm install para instalar todos los paquetes y dependencias
+   4. Instalar dependencias necesarias para canva.
+   5. Ejecutar el comando npm run watch asegurarse ejecutar primero backend PORT=3000 y despues frontend este ultimo en el puerto 3001
 
-    6. Ir a ./frontend 
-    7. Ejecutar el comando npm install para instalar todos los paquetes y dependencias
-    8. Ejecutar el comando npm run start
-
-
+   6. Ir a ./frontend 
+   7. Ejecutar el comando npm install para instalar todos los paquetes y dependencias
+   8. Ejecutar el comando npm run start
 
 
 
-. El backend es necesario correrlo con "npm run watch"
+
