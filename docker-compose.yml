@@ -1,0 +1,30 @@
+version: '3'
+services:
+  backend:
+    build: ./backend  # Usa el Dockerfile en ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/usr/src/app  # Monta el código del backend
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - db
+
+  db:
+    image: nouchka/sqlite3
+    volumes:
+      - database_data:/data  # Almacena los datos de SQLite en un volumen persistente
+    restart: always
+
+  frontend:
+    build: ./frontend  # Usa el Dockerfile en ./frontend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend  # Asegura que el backend esté disponible antes del frontend
+
+volumes:
+  database_data:

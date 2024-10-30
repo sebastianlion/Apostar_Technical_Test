@@ -1,0 +1,27 @@
+.formContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerForm{
+    color: white;
+    margin-bottom: 10px 
+}
+
+.formInput {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    /* background-color: E3B32F; */
+}
+
+.formButton {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #E3B32F ;
+    width: 200px;
+    cursor: pointer;
+}

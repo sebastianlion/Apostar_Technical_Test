@@ -1,0 +1,17 @@
+### 1. Decisiones Técnicas y Mejoras Futuras
+
+#### Decisiones Técnicas
+1. **Dockerización**: Se utilizó Docker para facilitar el despliegue y asegurar un entorno consistente.
+2. **SQLite para la Persistencia**: Dado que se trata de una aplicación simple y de bajo volumen de datos, SQLite permite una solución ligera y rápida para almacenar los parámetros configurados.
+3. **Node-cron para la Programación de Tareas**: Esta librería se usó para manejar la ejecución programada diaria a las 23:50 de forma precisa y confiable.
+4. **Node.js-Express permite crear servidores eficientes y escalables con un modelo asincrónico y un vasto ecosistema de paquetes.
+5. **React-typescript facilita el desarrollo de interfaces interactivas y seguras con componentes reutilizables y verificación de tipos.
+5. **Ventajas combinadas uso de un solo lenguaje en todo el stack, consistencia en datos y modelos, y despliegue simplificado.
+
+#### Posibles Mejoras Futuras
+1. **Uso de una Base de Datos más Escalable**: En caso de que el volumen de datos aumente, podría migrarse de SQLite a una base de datos más escalable, como PostgreSQL o MongoDB.
+2. **Autenticación de Usuarios**: Para mayor seguridad, implementar autenticación y control de acceso a la configuración.
+3. **Microservicios**: Separar el generador de imágenes y el servicio de correos en microservicios podría mejorar la escalabilidad y facilitar el mantenimiento.
+4. **Pruebas Automatizadas y de Integración**: Integrar pruebas automatizadas en un pipeline de CI/CD para detectar errores antes de desplegar a producción.
+
+#### Este enfoque garantiza un código modular, fácil de escalar y con buenas prácticas para pruebas y despliegue.

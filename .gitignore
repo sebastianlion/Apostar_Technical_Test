@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Backend-specific
+/backend/node_modules/
+/backend/.env
+/backend/database.sqlite
+
+# Frontend-specific
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env
+
+# Docker
+docker-compose.override.yml
+database_data/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Editor Configurations
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# System files
+*.swp
+*~
+*.tmp
